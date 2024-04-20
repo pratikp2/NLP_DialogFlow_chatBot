@@ -1,6 +1,7 @@
-===================
+
 Chatbot for food orders online delivery using Dialogflow
 ===================
+
 Build a chatbot for food orders online delivery using Google's Dialogflow ES. This bot supports two options,
 
 1) New Order
@@ -30,7 +31,7 @@ User: How about 41
 Bot: Order # 41 is delivered
 
 
-===================
+
 Directory structure
 ===================
 backend: Contains Python FastAPI backend code
@@ -39,7 +40,7 @@ dialogflow_assets: this has training phrases etc. for our intents
 frontend: website code
 
 
-======================
+
 Install these modules
 ======================
 pip install mysql-connector
@@ -47,7 +48,7 @@ pip install "fastapi[all]"
 OR just run pip install -r backend/requirements.txt to install both in one shot
 
 
-================================
+
 Run the chat bot on dialog flow
 ================================
 - For running a chat bot you can create your won chat or you can import created chat bot preset in repo called OccamsLightSaber
@@ -56,14 +57,14 @@ Run the chat bot on dialog flow
 - Make sure that Fullfillment Section should be enabled.
 
 
-================================
+
 Setup Database Server
 ================================
 - Install MySQL workbench on localhost system 
 - Run mysql work bech and start the server. create a new data base with all menu items or import the sample database present in db folder.
 
 
-================================
+
 Setup Backend API Server
 ================================
 1. Go to the backend directory in your command prompt
@@ -71,7 +72,7 @@ Setup Backend API Server
 3. pick the url given by uvicorn and paste it in webhook section it should be something like 127.0.0.1:<port number>, which is also localhost ip so you can simply copy and paste http://localhost:8000 .
 4. You will encounter once problem that webhook accepts only https url so port forwarding to secure url is needed. we can use ngrok for that.
 
-================================
+
 ngrok for https tunneling
 ================================
 1. To install ngrok, go to https://ngrok.com/download and install ngrok version that is suitable for your OS
